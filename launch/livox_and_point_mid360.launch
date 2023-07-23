@@ -1,0 +1,7 @@
+<launch>
+    <include file="/home/sentry/ws_livox2/src/livox_ros_driver2/launch_ROS1/msg_MID360.launch" />
+    <include file="$(find point_lio)/launch/mapping_avia.launch" />
+    <node pkg="lidar_control" type="cmd_vel_converter.py" name="cmd_vel_converter" />
+    <node pkg="lidar_control" type="position_converter.py" name="position_converter" />
+    <node pkg="lidar_control" type="lidar_converter.py" name="lidar_converter" />
+</launch>
