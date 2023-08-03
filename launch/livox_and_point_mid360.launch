@@ -3,5 +3,5 @@
     <include file="$(find point_lio)/launch/mapping_avia.launch" />
     <node pkg="lidar_control" type="cmd_vel_converter.py" name="cmd_vel_converter" />
     <node pkg="lidar_control" type="position_converter.py" name="position_converter" />
-    <node pkg="lidar_control" type="lidar_converter.py" name="lidar_converter" />
+    <node pkg="lidar_control" type="lidar_converter_plus.py" name="lidar_converter_plus" />
 </launch>
